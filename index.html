@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta name="twitter:card" content="player">
+		<meta name="twitter:site" content="@duallip">
+		<meta name="twitter:title" content="Duallip">
+		<meta name="twitter:description" content="Ajoutez des éléments interactif à vos photos">
+		<meta name="twitter:image" content="http://www.stamp.yt/cards/images/photo.png">
+		<meta name="twitter:player" content="http://www.stamp.yt/cards/index.html">
+		<meta name="twitter:player:width" content="1000">
+		<meta name="twitter:player:height" content="500">
+		
+		<meta charset="utf-8">
+		<title>Stampyt</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				initBar();
+				
+				animBar();
+				
+				$("div.label").mouseenter(function(){
+					$("div#"+this.id+"Infos").fadeIn(300);
+				});
+				$("div.label").mouseleave(function(){
+					$("div#"+this.id+"Infos").fadeOut(300);
+				});
+			});
+			
+			function animBar(){
+				$("div.triangle").animate({
+					right: 0
+					}, 500, function(){
+						$("img.logo").fadeIn(1000);
+					});
+			}
+			function initBar(){
+				$("div.triangle").animate({right: -1000}, 0);
+				$("img.logo").fadeOut(0);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="photo">
+			<div id="steeve" class="label"></div>
+			<div id="steeveInfos" class="infos"><img src="images/steeve.png" alt="Steeve"></div>
+			<div class="triangle">
+				<a href="http://www.stamp.yt" target="_blank"><img src="images/logo.png" alt="Stampyt" class="logo"></a>
+			</div>
+		</div>
+	</body>
+</html>
