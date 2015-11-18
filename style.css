@@ -14,7 +14,7 @@ body, html{
 	margin: auto;
 	width: 1000px;
 	height: 500px;
-	background-image: url('images/photo.png');
+	background-image: url('images/photo.jpg');
 	overflow: hidden;
 }
 
