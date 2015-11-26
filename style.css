@@ -12,9 +12,12 @@ body, html{
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	width: 1000px;
-	height: 500px;
-	background-image: url('images/photo.jpg');
+	/*width: 1000px;
+	height: 500px;*/
+	width: 506px;
+	height: 253px;
+	background-image: url('images/photo.png');
+	background-size: contain;
 	overflow: hidden;
 }
 
@@ -24,26 +27,27 @@ body, html{
 	right: 0;
 	width: 0; 
 	height: 0; 
-	border-bottom: 150px solid #FFFFFF; 
-	border-left: 1000px solid transparent;
+	border-bottom: 75px solid #FFFFFF; 
+	border-left: 506px solid transparent;
 }
 
 .logo{
+	width:75px;
 	position: absolute;
 	right: 0px;
-	bottom: -130px;
+	bottom: -60px;
 	/*opacity: 0;*/
 }
 
 
 #steeve{
 	position: absolute;
-	top: 300px;
-	left: 420px;
+	top: 140px;
+	left: 120px;
 }
 #steeveInfos{
-	 left: 461px;
-	 top: 267px;
+	 left: 160px;
+	 top: 108px;
 	 width: 100px;
 	 height: 100px;
 }
