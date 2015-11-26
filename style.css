@@ -16,7 +16,7 @@ body, html{
 	height: 500px;*/
 	width: 506px;
 	height: 253px;
-	background-image: url('images/photo.png');
+	background-image: url('images/photo.jpg');
 	background-size: contain;
 	overflow: hidden;
 }
